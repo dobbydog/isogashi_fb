@@ -1,13 +1,5 @@
 /*! isogashi_fb - v0.0.0 - 2013-11-18
 * Copyright (c) 2013 ; Licensed  */
-var IsogashiFB = {
-	appId             : '361206237349799',
-	sentenceField     : ["message", "description"],
-	numberPosts       : 100,
-	postMessageBefore : "{name}さんのタイムラインはだいたいこんな感じ\n----------\n",
-	postMessageAfter  : "\n\n※この文章は「忙しい人のためのFacebook」で自動的に生成されました\nhttp://bit.ly/1dG6YQq",
-	markovApi         : "http://www18136ue.sakura.ne.jp/cgi-bin/api.rb"
-};
 // Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;

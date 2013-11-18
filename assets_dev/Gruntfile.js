@@ -17,8 +17,8 @@ module.exports = function(grunt) {
 				stripBanners: true
 			},
 			dist: {
-				src: ['config.js', 'assets_dev/js/plugins.js', 'assets_dev/js/main.js'],
-				dest: 'assets/js/<%= pkg.name %>.js'
+				src: ['../config.js', 'js/plugins.js', 'js/main.js'],
+				dest: '../assets/js/<%= pkg.name %>.js'
 			}
 		},
 		uglify: {
@@ -27,21 +27,21 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				src: '<%= concat.dist.dest %>',
-				dest: 'assets/js/<%= pkg.name %>.min.js'
+				dest: '../assets/js/<%= pkg.name %>.min.js'
 			}
 		},
 		compass: {
 			dist: {
 				options: {
-					sassDir: 'assets_dev/sass',
-					cssDir: 'assets/css'
+					sassDir: 'sass',
+					cssDir: '../assets/css'
 				}
 			}
 		},
 		cssmin: {
 			minify: {
-				src: ['assets/css/app.css'],
-				dest: 'assets/css/app.min.css'
+				src: ['../assets/css/app.css'],
+				dest: '../assets/css/app.min.css'
 			}
 		},
 		recess: {
@@ -50,35 +50,35 @@ module.exports = function(grunt) {
 				banner: '<%= banner %>'
 			},
 			bootstrap: {
-				src: ['assets_dev/less/bootstrap.less'],
-				dest: 'assets/css/bootstrap.css'
+				src: ['less/bootstrap.less'],
+				dest: '../assets/css/bootstrap.css'
 			},
 			min: {
 				options: {
 					compress: true
 				},
-				src: ['assets_dev/less/bootstrap.less'],
-				dest: 'assets/css/bootstrap.min.css'
+				src: ['less/bootstrap.less'],
+				dest: '../assets/css/bootstrap.min.css'
 			},
 			theme: {
-				src: ['assets_dev/less/theme.less'],
-				dest: 'assets/css/bootstrap-theme.css'
+				src: ['less/theme.less'],
+				dest: '../assets/css/bootstrap-theme.css'
 			},
 			theme_min: {
 				options: {
 					compress: true
 				},
-				src: ['assets_dev/less/theme.less'],
-				dest: 'assets/css/bootstrap-theme.min.css'
+				src: ['less/theme.less'],
+				dest: '../assets/css/bootstrap-theme.min.css'
 			}
 		},
 		watch: {
 			recess: {
-				files: ['assets_dev/less/*'],
+				files: ['less/*'],
 				tasks: ['recess']
 			},
 			compass: {
-				files: ['assets_dev/sass/*'],
+				files: ['sass/*'],
 				tasks: ['compass']
 			}
 		}
