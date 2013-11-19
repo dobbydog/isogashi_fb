@@ -35,7 +35,7 @@
 					<a href="javascript:;" title="" id="share-button" class="btn btn-default">この結果を投稿する</a>
 				</div>
 				<p>
-					<a href="javascript:;" title="" id="login-button" class="btn btn-default btn-block btn-lg" style="display:none">Facebookでログイン</a>
+					<a href="javascript:;" title="" id="login-button" class="btn btn-default btn-block btn-lg">Facebookでログイン</a>
 					<a href="javascript:;" title="" id="exec-button" class="btn btn-success btn-block btn-lg" style="display:none">タイムラインをまとめる</a>
 				</p>
 				<div class="progress progress-striped" id="progress" style="display:none">
