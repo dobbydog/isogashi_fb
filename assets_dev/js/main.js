@@ -1,3 +1,5 @@
+jQuery.support.cors = true;
+
 jQuery(function($) {
 
 	function fbInit() {
